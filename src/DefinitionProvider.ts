@@ -48,7 +48,7 @@ export default class DefinitionProvider implements vscode.DefinitionProvider {
         if (!value.endsWith('/')) {
           value += '/';
         }
-        return aliasPath.replace(key + '/', value);
+        return aliasPath.replace(key + '/', path.resolve(vscode.workspace.rootPath, value) + '/');
       }
     }
   }
