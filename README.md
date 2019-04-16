@@ -10,7 +10,7 @@
 
 ### Configuration
 如果使用的是 webpack 别名路径, 99% 的情况不需要做任何设置, 插件可以智能的识别出 webpack alias, 并进行自动设置.
-- alias: 别名路径映射, 路径为绝对路径
+- alias: 别名路径映射, ~~路径为绝对路径~~, 路径可以为绝对路径或者相对路径(相对项目根目录)
 ```
 "jumpToAliasFile.alias": {
   "@": "/Users/xxx/project/src",
